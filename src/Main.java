@@ -52,7 +52,7 @@ public class Main {
 			int stCounter = 0;
 			
 			boolean afterx = false;
-			int sign=1;							//sintelestis prosimou
+			int sign=1;							
 			String tempStr="0";
 			int tempInt=0;
 			String tempStrForXnumber="";
@@ -109,7 +109,7 @@ public class Main {
 						continue;
 					}
 					if(aCharacter == 'x') {
-						if(afterx) {		//leipei sintelestis, kathws to afterx ginetai false mono otan ftanei se '-' h '+'
+						if(afterx) {		//missing factor, afterx becomes false only if it is read '-' or '+'
 							System.out.println("Error, missing factor on line "+lineCounter);
 							errorFound=true;
 							break;
@@ -264,7 +264,7 @@ public class Main {
 						break;
 					}
 					else if(!line.startsWith("xj")&&!lineSplitted) {
-						System.out.println("Missing equallity symbol on line"+lineCounter);
+						System.out.println("Missing equality symbol on line"+lineCounter);
 						errorFound=true;
 						break;
 					}		
