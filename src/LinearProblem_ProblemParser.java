@@ -9,7 +9,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class LinearProblem_ProblemParser {
 	
 
 	public static void main(String[] args) {
